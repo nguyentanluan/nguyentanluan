@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+.lab {
+    margin-bottom: 60px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* ===== BÀI 1: MARQUEE ===== */
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.marquee p {
+    display: inline-block;
+    animation: moveText 4s linear infinite;
+}
+
+@keyframes moveText {
+    from {
+        transform: translateX(120%);
+    }
+    to {
+        transform: translateX(-120%);
+    }
+}
+
+/* ===== BÀI 2: ROTATE BOX ===== */
+.box {
+    width: 100px;
+    height: 100px;
+    background: dodgerblue;
+    margin: 30px auto;
+    animation: rotateBox 3s linear infinite;
+}
+
+@keyframes rotateBox {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ===== BÀI 3: FADE IN ===== */
+.fade-container img {
+    width: 200px;
+    margin-right: 10px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+
+.fade-container img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.fade-container img:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.fade-container img:nth-child(3) {
+    animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ===== BÀI 4: CTA ===== */
+.cta {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background: red;
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        background: red;
+        transform: scale(1);
+    }
+    50% {
+        background: orange;
+        transform: scale(1.05);
+    }
+    100% {
+        background: red;
+        transform: scale(1);
+    }
+}
+
+/* ===== BÀI 5: SLIDER ===== */
+/* Khung chứa cố định */
+.slider {
+    width: 600px; /* Bạn có thể thay đổi kích thước tùy ý */
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 5px solid #ddd;
+}
+
+/* Dải chứa ảnh xếp ngang */
+.slides {
+    display: flex;
+    width: 300%; /* Vì có 3 ảnh, mỗi ảnh chiếm 100% */
+    animation: slide 5s infinite;
+    transition: 5s;
+}
+
+/* Định dạng từng ảnh */
+.slides img {
+    width: 100%; /* Chiếm 100% chiều rộng của .slider */
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Hiệu ứng chuyển động */
+@keyframes slide {
+    0% {transition: 2s; transform: translateX(0); }             /* Ảnh 1 */
+    28% {transition: 2s; transform: translateX(-800px); }            /* Dừng ở ảnh 1 */       /* Chuyển sang ảnh 2 */
+    61% {transition: 2s; transform: translateX(0); }        /* Dừng ở ảnh 2 */        /* Quay về ảnh 1 */
+}
+body {
+    margin: 0;
+    padding: 20px;
+    background: black;
+    color: white;
+}
