@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lab 4 - Animation Libraries</title>
+
+<!-- Thư viện -->
+<link rel="stylesheet" href="assets/libs/animate.min.css">
+<link rel="stylesheet" href="assets/libs/aos.css">
+
+<!-- CSS tự viết -->
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<section id="bai1">
+    <h2>Bài 1: Hiệu ứng AOS</h2>
+    <div class="container-flex">
+        <div data-aos="fade-up" class="box box-red">Box 1</div>
+        <div data-aos="fade-up" data-aos-delay="200" class="box box-green">Box 2</div>
+        <div data-aos="fade-up" data-aos-delay="400" class="box box-blue">Box 3</div>
+    </div>
+</section>
+
+<section id="bai2">
+    <div class="hero-text">
+        <h1 class="animate__animated animate__bounceIn">
+            BÀI 2: CHÀO MỪNG
+        </h1>
+        <p class="animate__animated animate__fadeInUp animate__delay-1s">
+            Dòng này xuất hiện sau 1 giây
+        </p>
+    </div>
+</section>
+
+<section id="bai3">
+    <h2>Bài 3: GSAP Basic Tween</h2>
+    <div class="gsap-box box box-orange">GSAP Move</div>
+</section>
+
+<section id="bai4">
+    <div class="header-anim">MENU HEADER</div>
+    <div class="hero-content">
+        <h2 class="hero-title">Nội Dung Chính</h2>
+        <button class="hero-cta">MUA NGAY</button>
+    </div>
+</section>
+
+<section id="bai5">
+    <h2>Bài 5: Stagger Effect</h2>
+    <div class="card-list">
+        <div class="card">Sản phẩm 1</div>
+        <div class="card">Sản phẩm 2</div>
+        <div class="card">Sản phẩm 3</div>
+        <div class="card">Sản phẩm 4</div>
+    </div>
+</section>
+
+<!-- JS -->
+<script src="assets/libs/aos.js"></script>
+<script src="assets/libs/gsap.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
