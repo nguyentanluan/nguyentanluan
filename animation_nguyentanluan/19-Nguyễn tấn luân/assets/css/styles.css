@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    transition: background .4s, color .4s;
+}
+
+/* ===== NAV ===== */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    position: relative;
+}
+
+nav a.active {
+    color: orange;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: orange;
+    transition: .3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ===== SECTION CHUNG ===== */
+section {
+    min-height: 100vh;
+    padding: 120px 50px;
+    text-align: center;
+    scroll-margin-top: 80px;
+}
+
+/* ===== HERO (KHÔNG BỊ DARK MODE) ===== */
+#hero {
+    background: #666;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h1 {
+    font-size: 52px;
+    animation: fadeIn 2s forwards;
+}
+
+.sub {
+    margin: 15px 0;
+}
+
+/* marquee */
+.marquee {
+    margin-top: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    to { transform: translateX(-100%); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ===== PRODUCTS ===== */
+.card-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    width: 250px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: .6s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.3);
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== GALLERY ===== */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 220px;
+    transition: .4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* ===== CTA ===== */
+.cta-btn {
+    padding: 15px 40px;
+    font-size: 18px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    animation: blink 1s infinite alternate;
+}
+
+.cta-btn:hover {
+    transform: translateY(-6px);
+}
+
+@keyframes blink {
+    from { background: red; }
+    to { background: orange; }
+}
+
+/* ===== DARK MODE ===== */
+body.dark section:not(#hero) {
+    background: #111;
+    color: white;
+}
+
+body.dark .card {
+    background: #222;
+}
+
+body.dark nav {
+    background: #000;
+}
+
+/* ===== CURSOR ===== */
+.cursor {
+    position: fixed;
+    width: 18px;
+    height: 18px;
+    background: red;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+}
+/* ===== HERO SLIDER ===== */
+.hero-slider {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+}
+
+/* slides */
+.slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slideHero 15s infinite;
+}
+
+.slides img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* overlay chữ */
+.hero-content {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5); /* lớp phủ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    animation: fadeIn 2s forwards;
+}
+
+.hero-content p {
+    margin: 15px 0;
+}
+
+/* marquee giữ nguyên */
+.marquee {
+    margin-top: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+}
+
+/* ===== KEYFRAMES ===== */
+@keyframes slideHero {
+    0%   { transform: translateX(0); }
+    33%  { transform: translateX(0); }
+
+    36%  { transform: translateX(-100%); }
+    66%  { transform: translateX(-100%); }
+
+    69%  { transform: translateX(-200%); }
+    100% { transform: translateX(-200%); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes marquee {
+    to { transform: translateX(-100%); }
+}
