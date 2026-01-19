@@ -257,22 +257,38 @@ body.dark nav {
 }
 
 /* ===== KEYFRAMES ===== */
-@keyframes slideHero {
-    0%   { transform: translateX(0); }
-    33%  { transform: translateX(0); }
-
-    36%  { transform: translateX(-100%); }
-    66%  { transform: translateX(-100%); }
-
-    69%  { transform: translateX(-200%); }
-    100% { transform: translateX(-200%); }
+.hero-slider {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.slider-container {
+    width: 100%;
+    height: 100%;
 }
 
-@keyframes marquee {
-    to { transform: translateX(-100%); }
+.slides {
+    display: flex;
+    width: 300%; /* Số lượng ảnh x 100% */
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1); /* Chuyển cảnh mượt */
+}
+
+.slides img {
+    width: 33.333%; /* 100% chia cho 3 ảnh */
+    height: 100vh;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* Làm tối ảnh một chút để nổi chữ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
 }
