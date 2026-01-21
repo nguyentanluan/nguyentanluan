@@ -3,31 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing - TechStart</title>
+    <title>Bảng giá - ArtSpace</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/pricing.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Sticky -->
     <header class="header" id="header">
         <div class="container">
             <nav class="nav">
                 <a href="index.html" class="logo">
-                    <i class="fas fa-rocket"></i>
-                    <span>TechStart</span>
+                    <i class="fas fa-palette"></i>
+                    <span>ArtSpace</span>
                 </a>
                 
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="pricing.html" class="active">Pricing</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#" class="btn btn-outline">Try Free</a></li>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="features.html">Tính năng</a></li>
+                    <li><a href="pricing.html" class="active">Bảng giá</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                    <li><a href="#" class="btn btn-outline">Đăng nhập</a></li>
+                    <li><a href="#" class="btn btn-primary">Bắt đầu sáng tạo</a></li>
                 </ul>
                 
                 <div class="menu-toggle" id="menuToggle">
@@ -40,236 +39,268 @@
     </header>
 
     <!-- Pricing Hero -->
-    <section class="pricing-hero" data-aos="fade-up">
+    <section class="pricing-hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Simple, Transparent Pricing</h1>
-                <p class="hero-subtitle">Choose the perfect plan for your business. No hidden fees, no surprises.</p>
+                <h1 class="hero-title" data-aos="fade-up">Lựa chọn phù hợp với bạn</h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">Dù bạn là sinh viên hay nghệ sĩ chuyên nghiệp, chúng tôi có kế hoạch phù hợp</p>
                 
                 <!-- Billing Toggle -->
-                <div class="billing-toggle" data-aos="fade-up" data-aos-delay="200">
-                    <span>Monthly</span>
-                    <label class="toggle-switch">
-                        <input type="checkbox" id="billingToggle">
-                        <span class="toggle-slider"></span>
-                    </label>
-                    <span>Yearly <span class="discount-badge">Save 20%</span></span>
+                <div class="billing-toggle" data-aos="fade-up" data-aos-delay="400">
+                    <span>Thanh toán hàng tháng</span>
+                    <div class="toggle-switch">
+                        <input type="checkbox" id="billingToggle" class="toggle-input">
+                        <label for="billingToggle" class="toggle-label">
+                            <span class="toggle-handle"></span>
+                        </label>
+                    </div>
+                    <span>Thanh toán hàng năm <span class="discount-badge">Tiết kiệm 25%</span></span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Tables -->
-    <section class="section pricing-tables" id="pricing">
+    <!-- Pricing Tables with Reveal Animation -->
+    <section class="section pricing-tables-section">
         <div class="container">
-            <div class="pricing-grid">
-                <!-- Starter Plan -->
+            <div class="pricing-grid" data-aos="fade-up" data-aos-delay="200">
+                <!-- Hobbyist Plan -->
                 <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-header">
-                        <h3 class="plan-name">Starter</h3>
+                    <div class="plan-header">
+                        <h3 class="plan-name">Hobbyist</h3>
                         <div class="plan-price">
-                            <span class="currency">$</span>
-                            <span class="amount monthly">29</span>
-                            <span class="amount yearly">23</span>
-                            <span class="period">/month</span>
+                            <span class="currency">₫</span>
+                            <span class="amount monthly">89.000</span>
+                            <span class="amount yearly">66.750</span>
+                            <span class="period">/tháng</span>
                         </div>
-                        <p class="plan-description">Perfect for small businesses just getting started</p>
+                        <p class="plan-desc">Cho sinh viên và người mới bắt đầu</p>
                     </div>
                     
-                    <div class="card-features">
+                    <div class="plan-features">
                         <ul>
-                            <li><i class="fas fa-check"></i> Up to 5 users</li>
-                            <li><i class="fas fa-check"></i> 10GB storage</li>
-                            <li><i class="fas fa-check"></i> Basic analytics</li>
-                            <li><i class="fas fa-check"></i> Email support</li>
-                            <li><i class="fas fa-times"></i> <del>Advanced features</del></li>
-                            <li><i class="fas fa-times"></i> <del>Priority support</del></li>
+                            <li><i class="fas fa-check"></i> 50 tác phẩm</li>
+                            <li><i class="fas fa-check"></i> 1 Portfolio</li>
+                            <li><i class="fas fa-check"></i> 5GB lưu trữ</li>
+                            <li><i class="fas fa-check"></i> Hỗ trợ cơ bản</li>
+                            <li><i class="fas fa-times"></i> <del>Cửa hàng online</del></li>
+                            <li><i class="fas fa-times"></i> <del>ArtStudio AI</del></li>
                         </ul>
                     </div>
                     
-                    <div class="card-footer">
-                        <a href="contact.html" class="btn btn-outline btn-block">Get Started</a>
+                    <div class="plan-footer">
+                        <a href="contact.html" class="btn btn-outline btn-block">Bắt đầu</a>
                     </div>
                 </div>
-
-                <!-- Pro Plan (Most Popular) -->
+                
+                <!-- Pro Plan (Featured) -->
                 <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="200">
-                    <div class="popular-badge">Most Popular</div>
-                    <div class="card-header">
+                    <div class="popular-badge">Phổ biến nhất</div>
+                    <div class="plan-header">
                         <h3 class="plan-name">Professional</h3>
                         <div class="plan-price">
-                            <span class="currency">$</span>
-                            <span class="amount monthly">79</span>
-                            <span class="amount yearly">63</span>
-                            <span class="period">/month</span>
+                            <span class="currency">₫</span>
+                            <span class="amount monthly">199.000</span>
+                            <span class="amount yearly">149.250</span>
+                            <span class="period">/tháng</span>
                         </div>
-                        <p class="plan-description">Ideal for growing teams and businesses</p>
+                        <p class="plan-desc">Cho nghệ sĩ độc lập chuyên nghiệp</p>
                     </div>
                     
-                    <div class="card-features">
+                    <div class="plan-features">
                         <ul>
-                            <li><i class="fas fa-check"></i> Up to 20 users</li>
-                            <li><i class="fas fa-check"></i> 100GB storage</li>
-                            <li><i class="fas fa-check"></i> Advanced analytics</li>
-                            <li><i class="fas fa-check"></i> Priority support</li>
-                            <li><i class="fas fa-check"></i> Custom integrations</li>
-                            <li><i class="fas fa-check"></i> API access</li>
+                            <li><i class="fas fa-check"></i> 500 tác phẩm</li>
+                            <li><i class="fas fa-check"></i> 3 Portfolio</li>
+                            <li><i class="fas fa-check"></i> 50GB lưu trữ</li>
+                            <li><i class="fas fa-check"></i> Cửa hàng online</li>
+                            <li><i class="fas fa-check"></i> ArtStudio AI cơ bản</li>
+                            <li><i class="fas fa-check"></i> Phí giao dịch 5%</li>
                         </ul>
                     </div>
                     
-                    <div class="card-footer">
-                        <a href="contact.html" class="btn btn-primary btn-block">Try Free for 14 Days</a>
+                    <div class="plan-footer">
+                        <a href="contact.html" class="btn btn-primary btn-block">Dùng thử miễn phí</a>
                     </div>
                 </div>
-
-                <!-- Enterprise Plan -->
+                
+                <!-- Studio Plan -->
                 <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card-header">
-                        <h3 class="plan-name">Enterprise</h3>
+                    <div class="plan-header">
+                        <h3 class="plan-name">Studio</h3>
                         <div class="plan-price">
-                            <span class="currency">$</span>
-                            <span class="amount monthly">199</span>
-                            <span class="amount yearly">159</span>
-                            <span class="period">/month</span>
+                            <span class="currency">₫</span>
+                            <span class="amount monthly">499.000</span>
+                            <span class="amount yearly">374.250</span>
+                            <span class="period">/tháng</span>
                         </div>
-                        <p class="plan-description">For large organizations with custom needs</p>
+                        <p class="plan-desc">Cho studio và nghệ sĩ thành danh</p>
                     </div>
                     
-                    <div class="card-features">
+                    <div class="plan-features">
                         <ul>
-                            <li><i class="fas fa-check"></i> Unlimited users</li>
-                            <li><i class="fas fa-check"></i> 1TB+ storage</li>
-                            <li><i class="fas fa-check"></i> Premium analytics</li>
-                            <li><i class="fas fa-check"></i> 24/7 phone support</li>
-                            <li><i class="fas fa-check"></i> Custom development</li>
-                            <li><i class="fas fa-check"></i> Dedicated account manager</li>
+                            <li><i class="fas fa-check"></i> Tác phẩm không giới hạn</li>
+                            <li><i class="fas fa-check"></i> 10 Portfolio</li>
+                            <li><i class="fas fa-check"></i> 200GB lưu trữ</li>
+                            <li><i class="fas fa-check"></i> ArtStudio AI nâng cao</li>
+                            <li><i class="fas fa-check"></i> Phí giao dịch 3%</li>
+                            <li><i class="fas fa-check"></i> Hỗ trợ ưu tiên</li>
                         </ul>
                     </div>
                     
-                    <div class="card-footer">
-                        <a href="contact.html" class="btn btn-outline btn-block">Contact Sales</a>
+                    <div class="plan-footer">
+                        <a href="contact.html" class="btn btn-outline btn-block">Liên hệ tư vấn</a>
                     </div>
-                </div>
-            </div>
-
-            <!-- Comparison Table -->
-            <div class="comparison-table" data-aos="fade-up">
-                <h3 class="table-title">Plan Comparison</h3>
-                <div class="table-responsive">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Feature</th>
-                                <th>Starter</th>
-                                <th>Professional</th>
-                                <th>Enterprise</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Users</td>
-                                <td>Up to 5</td>
-                                <td>Up to 20</td>
-                                <td>Unlimited</td>
-                            </tr>
-                            <tr>
-                                <td>Storage</td>
-                                <td>10GB</td>
-                                <td>100GB</td>
-                                <td>1TB+</td>
-                            </tr>
-                            <tr>
-                                <td>Support</td>
-                                <td>Email</td>
-                                <td>Priority</td>
-                                <td>24/7 Phone</td>
-                            </tr>
-                            <tr>
-                                <td>Customization</td>
-                                <td>Basic</td>
-                                <td>Advanced</td>
-                                <td>Full</td>
-                            </tr>
-                            <tr>
-                                <td>API Access</td>
-                                <td><i class="fas fa-times"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Dedicated Manager</td>
-                                <td><i class="fas fa-times"></i></td>
-                                <td><i class="fas fa-times"></i></td>
-                                <td><i class="fas fa-check"></i></td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="section faq-section" id="faq">
+    <!-- Pricing Comparison Table -->
+    <section class="section comparison-section">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Pricing FAQ</h2>
-                <p class="section-subtitle">Common questions about our pricing plans</p>
+                <h2 class="section-title">So sánh các gói</h2>
+                <p class="section-subtitle">Xem chi tiết sự khác biệt giữa các gói dịch vụ</p>
             </div>
+            
+            <div class="comparison-table reveal-on-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tính năng</th>
+                            <th>Hobbyist</th>
+                            <th>Professional</th>
+                            <th>Studio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Số lượng tác phẩm</td>
+                            <td>50</td>
+                            <td>500</td>
+                            <td>Không giới hạn</td>
+                        </tr>
+                        <tr>
+                            <td>Portfolio</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Lưu trữ</td>
+                            <td>5GB</td>
+                            <td>50GB</td>
+                            <td>200GB</td>
+                        </tr>
+                        <tr>
+                            <td>Cửa hàng online</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>ArtStudio AI</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td>Cơ bản</td>
+                            <td>Nâng cao</td>
+                        </tr>
+                        <tr>
+                            <td>Phí giao dịch</td>
+                            <td>10%</td>
+                            <td>5%</td>
+                            <td>3%</td>
+                        </tr>
+                        <tr>
+                            <td>Hỗ trợ</td>
+                            <td>Email</td>
+                            <td>Chat & Email</td>
+                            <td>24/7 Ưu tiên</td>
+                        </tr>
+                        <tr>
+                            <td>Tên miền riêng</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Analytics nâng cao</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td>Cơ bản</td>
+                            <td>Nâng cao</td>
+                        </tr>
+                        <tr>
+                            <td>Ứng dụng di động</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 
+    <!-- FAQ -->
+    <section class="section faq-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Câu hỏi về giá</h2>
+                <p class="section-subtitle">Giải đáp thắc mắc về bảng giá</p>
+            </div>
+            
             <div class="faq-grid">
                 <div class="faq-item" data-aos="fade-up">
                     <div class="faq-question">
-                        <h4>Can I switch plans at any time?</h4>
+                        <h4>Có thời gian dùng thử không?</h4>
                         <i class="fas fa-plus"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately, and we'll prorate the charges.</p>
+                        <p>Có! Tất cả gói đều có 14 ngày dùng thử miễn phí. Không cần thẻ tín dụng, bạn có thể trải nghiệm đầy đủ tính năng trước khi quyết định.</p>
                     </div>
                 </div>
-
+                
                 <div class="faq-item" data-aos="fade-up">
                     <div class="faq-question">
-                        <h4>Is there a free trial?</h4>
+                        <h4>Tôi có thể thay đổi gói sau này không?</h4>
                         <i class="fas fa-plus"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes! All paid plans come with a 14-day free trial. No credit card required to start your trial.</p>
+                        <p>Có, bạn có thể nâng cấp hoặc hạ cấp gói bất cứ lúc nào. Khi nâng cấp, bạn được tính phí chênh lệch. Khi hạ cấp, thay đổi có hiệu lực từ chu kỳ thanh toán tiếp theo.</p>
                     </div>
                 </div>
-
+                
                 <div class="faq-item" data-aos="fade-up">
                     <div class="faq-question">
-                        <h4>What payment methods do you accept?</h4>
+                        <h4>Phương thức thanh toán nào được hỗ trợ?</h4>
                         <i class="fas fa-plus"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers for annual plans.</p>
+                        <p>Chúng tôi hỗ trợ thẻ Visa, MasterCard, JCB, thanh toán qua ví điện tử (Momo, Zalopay, VNPay) và chuyển khoản ngân hàng.</p>
                     </div>
                 </div>
-
+                
                 <div class="faq-item" data-aos="fade-up">
                     <div class="faq-question">
-                        <h4>Do you offer discounts for non-profits?</h4>
+                        <h4>Có ưu đãi cho sinh viên không?</h4>
                         <i class="fas fa-plus"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes, we offer special pricing for registered non-profit organizations. Contact our sales team for more information.</p>
+                        <p>Có! Sinh viên ngành nghệ thuật được giảm 50% cho gói Professional. Liên hệ với chúng tôi kèm thẻ sinh viên để được hưởng ưu đãi.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="section cta-section" data-aos="fade-up">
+    <!-- CTA -->
+    <section class="section cta-section">
         <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">Ready to Get Started?</h2>
-                <p class="cta-text">Join thousands of businesses using TechStart to grow their operations.</p>
+            <div class="cta-content" data-aos="fade-up">
+                <h2 class="cta-title">Bắt đầu sáng tạo ngay hôm nay</h2>
+                <p class="cta-text">Tham gia cùng 25,000+ nghệ sĩ đang phát triển với ArtSpace</p>
                 <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary btn-large">Start Free Trial</a>
-                    <a href="contact.html" class="btn btn-secondary btn-large">Contact Sales</a>
+                    <a href="contact.html" class="btn btn-primary btn-large">Dùng thử 14 ngày miễn phí</a>
+                    <a href="contact.html" class="btn btn-outline btn-large">Liên hệ tư vấn</a>
                 </div>
             </div>
         </div>
@@ -281,55 +312,55 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <a href="index.html" class="footer-logo">
-                        <i class="fas fa-rocket"></i>
-                        <span>TechStart</span>
+                        <i class="fas fa-palette"></i>
+                        <span>ArtSpace</span>
                     </a>
-                    <p class="footer-text">Innovative technology solutions for modern businesses. Empowering startups worldwide.</p>
+                    <p class="footer-text">Nền tảng toàn diện dành cho nghệ sĩ và nhà sáng tạo. Nơi nghệ thuật gặp gỡ công nghệ.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 
                 <div class="footer-col">
-                    <h3 class="footer-title">Quick Links</h3>
+                    <h3 class="footer-title">Sản phẩm</h3>
                     <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="features.html">Features</a></li>
-                        <li><a href="pricing.html" class="active">Pricing</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="features.html">Tính năng</a></li>
+                        <li><a href="pricing.html" class="active">Bảng giá</a></li>
+                        <li><a href="#">ArtStudio AI</a></li>
+                        <li><a href="#">Ứng dụng di động</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col">
-                    <h3 class="footer-title">Resources</h3>
+                    <h3 class="footer-title">Cộng đồng</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Sự kiện</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Đối tác</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col">
-                    <h3 class="footer-title">Contact Info</h3>
-                    <ul class="footer-contact">
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Silicon Valley</li>
-                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-                        <li><i class="fas fa-envelope"></i> info@techstart.com</li>
+                    <h3 class="footer-title">Hỗ trợ</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Trung tâm trợ giúp</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                        <li><a href="#">Chính sách</a></li>
+                        <li><a href="#">Điều khoản</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2023 TechStart. All rights reserved.</p>
+                <p>&copy; 2023 ArtSpace. All rights reserved. | Thiết kế bởi WE24-01</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/pricing.js"></script>

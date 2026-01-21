@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm - TechStore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/shop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-desktop"></i>
+                    <span>TechStore</span>
+                </a>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="products.html" class="active">Sản phẩm</a></li>
+                    <li><a href="gaming.html">PC Gaming</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                    <li>
+                        <a href="cart.html" class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                    <li><a href="#" class="btn btn-outline">Đăng nhập</a></li>
+                </ul>
+                
+                <div class="menu-toggle" id="menuToggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Products Hero -->
+    <section class="shop-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Danh mục sản phẩm</h1>
+                <p class="hero-subtitle">Khám phá bộ sưu tập PC, laptop và phụ kiện gaming</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="section shop-section">
+        <div class="container">
+            <div class="shop-container">
+                <!-- Sidebar Filter -->
+                <aside class="shop-sidebar" data-aos="fade-right">
+                    <div class="filter-group">
+                        <h3 class="filter-title">Danh mục</h3>
+                        <ul class="filter-list">
+                            <li><a href="#" class="active" data-category="all">Tất cả sản phẩm</a></li>
+                            <li><a href="#" data-category="gaming">PC Gaming</a></li>
+                            <li><a href="#" data-category="workstation">Workstation</a></li>
+                            <li><a href="#" data-category="laptop">Laptop Gaming</a></li>
+                            <li><a href="#" data-category="accessories">Phụ kiện</a></li>
+                            <li><a href="#" data-category="components">Linh kiện rời</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3 class="filter-title">Lọc theo giá</h3>
+                        <div class="price-filter">
+                            <div class="price-range">
+                                <input type="range" min="0" max="500000000" value="50000000" class="range-min" id="priceMin">
+                                <input type="range" min="0" max="500000000" value="300000000" class="range-max" id="priceMax">
+                                <div class="price-slider"></div>
+                            </div>
+                            <div class="price-inputs">
+                                <div class="price-input">
+                                    <span>Từ</span>
+                                    <input type="text" id="minPrice" value="50.000.000đ">
+                                </div>
+                                <div class="price-input">
+                                    <span>Đến</span>
+                                    <input type="text" id="maxPrice" value="300.000.000đ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3 class="filter-title">CPU</h3>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="cpu" value="intel">
+                                <span class="checkmark"></span>
+                                Intel Core
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="cpu" value="amd">
+                                <span class="checkmark"></span>
+                                AMD Ryzen
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="cpu" value="xeon">
+                                <span class="checkmark"></span>
+                                Intel Xeon
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3 class="filter-title">GPU</h3>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="gpu" value="nvidia">
+                                <span class="checkmark"></span>
+                                NVIDIA RTX
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="gpu" value="amd-gpu">
+                                <span class="checkmark"></span>
+                                AMD Radeon
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-block" id="applyFilter">Áp dụng bộ lọc</button>
+                    <button class="btn btn-outline btn-block" id="resetFilter">Đặt lại</button>
+                </aside>
+                
+                <!-- Products Grid -->
+                <div class="shop-products">
+                    <div class="shop-header">
+                        <h2 class="shop-title">Sản phẩm máy tính</h2>
+                        <div class="shop-sort">
+                            <select id="sortProducts">
+                                <option value="default">Sắp xếp mặc định</option>
+                                <option value="price-asc">Giá thấp đến cao</option>
+                                <option value="price-desc">Giá cao đến thấp</option>
+                                <option value="name">Tên A-Z</option>
+                                <option value="popular">Bán chạy nhất</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="products-grid" id="productsContainer">
+                        <!-- Products will be loaded dynamically -->
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="page-btn disabled">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <button class="page-btn">4</button>
+                        <button class="page-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section newsletter-section">
+        <div class="container">
+            <div class="newsletter-content" data-aos="fade-up">
+                <div class="newsletter-text">
+                    <h2>Nhận thông báo khuyến mãi</h2>
+                    <p>Đăng ký để nhận thông tin về sản phẩm mới và khuyến mãi đặc biệt</p>
+                </div>
+                <div class="newsletter-form">
+                    <div class="form-group floating">
+                        <input type="email" id="newsletterEmail" placeholder="Email của bạn">
+                        <label for="newsletterEmail">Email của bạn</label>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="subscribeBtn">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-desktop"></i>
+                        <span>TechStore</span>
+                    </a>
+                    <p class="footer-text">Chuyên cung cấp PC Gaming, Workstation, Laptop và phụ kiện máy tính chính hãng.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-zalo"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Danh mục</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="products.html" class="active">Sản phẩm</a></li>
+                        <li><a href="gaming.html">PC Gaming</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Hỗ trợ</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Vận chuyển & Giao nhận</a></li>
+                        <li><a href="#">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Liên hệ</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Nguyễn Văn Linh, Quận 7, TP.HCM</li>
+                        <li><i class="fas fa-phone"></i> 1900 1234</li>
+                        <li><i class="fas fa-envelope"></i> info@techstore.vn</li>
+                        <li><i class="fas fa-clock"></i> 8:00 - 22:00 (Thứ 2 - Chủ nhật)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 TechStore. All rights reserved. | Thiết kế bởi WE24-01</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/shop.js"></script>
+    <script>
+        // Products data
+        const productsData = [
+            {
+                id: 1,
+                name: "Gaming PC RTX 4090",
+                category: "gaming",
+                price: 68990000,
+                oldPrice: 75990000,
+                image: "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                specs: ["Intel i9-13900K", "RTX 4090 24GB", "32GB DDR5", "2TB NVMe SSD"],
+                badge: "Bán chạy",
+                stock: 15
+            },
+            {
+                id: 2,
+                name: "PC Gaming RGB",
+                category: "gaming",
+                price: 52990000,
+                oldPrice: 62990000,
+                image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                specs: ["AMD Ryzen 9 7950X", "RTX 4080 16GB", "32GB DDR5", "1TB NVMe SSD"],
+                badge: "Giảm 15%",
+                stock: 8
+            },
+            {
+                id: 3,
+                name: "Workstation Pro",
+                category: "workstation",
+                price: 285990000,
+                oldPrice: null,
+                image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                specs: ["Xeon W9-3475X", "RTX A6000 48GB", "128GB DDR5", "4TB NVMe SSD"],
+                badge: "Mới",
+                stock: 3
+            },
+            {
+                id: 4,
+                name: "Laptop Gaming ROG",
+                category: "laptop",
+                price: 89990000,
+                oldPrice: null,
+                image: "https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                specs: ["i9-13980HX", "RTX 4090 Laptop", "64GB DDR5", "2TB SSD"],
+                badge: "HOT",
+                stock: 12
+            },
+            {
+                id: 5,
+                name: "PC Gaming RTX 4070 Ti",
+                category: "gaming",
+                price: 42990000,
+                oldPrice: 47990000,
+                image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                specs: ["Intel i7-13700K", "RTX 4070 Ti", "32GB DDR4", "1TB NVMe SSD"],
+                badge: "Khuyến mãi",
+                stock: 20
+            },
+            {
+                id: 6,
+                name: "Bàn phím cơ Gaming",
+                category: "accessories",
+                price: 2590000,
+                oldPrice: 3290000,
+                image: "https://images.unsplash.com/photo-1541140532154-b024d705b90a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                specs: ["Switches Red", "RGB Backlit", "Aluminum Frame", "USB-C"],
+                badge: "Giảm 21%",
+                stock: 45
+            },
+            {
+                id: 7,
+                name: "Màn hình 4K 144Hz",
+                category: "accessories",
+                price: 18990000,
+                oldPrice: null,
+                image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                specs: ["32 inch 4K", "144Hz Refresh", "1ms Response", "HDR600"],
+                badge: "Mới",
+                stock: 18
+            },
+            {
+                id: 8,
+                name: "Chuột gaming wireless",
+                category: "accessories",
+                price: 2490000,
+                oldPrice: 2990000,
+                image: "https://images.unsplash.com/photo-1527814050087-3793815479db?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                specs: ["25K DPI", "Wireless 2.4G", "RGB Lighting", "70g Weight"],
+                badge: "Giảm giá",
+                stock: 32
+            }
+        ];
+    </script>
+</body>
+</html>

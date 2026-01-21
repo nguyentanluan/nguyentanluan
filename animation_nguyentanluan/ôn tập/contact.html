@@ -3,31 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - TechStart</title>
+    <title>Liên hệ - ArtSpace</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Sticky -->
     <header class="header" id="header">
         <div class="container">
             <nav class="nav">
                 <a href="index.html" class="logo">
-                    <i class="fas fa-rocket"></i>
-                    <span>TechStart</span>
+                    <i class="fas fa-palette"></i>
+                    <span>ArtSpace</span>
                 </a>
                 
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                    <li><a href="#" class="btn btn-outline">Try Free</a></li>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="features.html">Tính năng</a></li>
+                    <li><a href="pricing.html">Bảng giá</a></li>
+                    <li><a href="contact.html" class="active">Liên hệ</a></li>
+                    <li><a href="#" class="btn btn-outline">Đăng nhập</a></li>
+                    <li><a href="#" class="btn btn-primary">Bắt đầu sáng tạo</a></li>
                 </ul>
                 
                 <div class="menu-toggle" id="menuToggle">
@@ -40,11 +39,11 @@
     </header>
 
     <!-- Contact Hero -->
-    <section class="contact-hero" data-aos="fade-up">
+    <section class="contact-hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Get in Touch</h1>
-                <p class="hero-subtitle">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                <h1 class="hero-title" data-aos="fade-up">Liên hệ với chúng tôi</h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">Chúng tôi luôn sẵn sàng hỗ trợ bạn trên hành trình sáng tạo</p>
             </div>
         </div>
     </section>
@@ -55,24 +54,261 @@
             <div class="contact-grid">
                 <!-- Contact Form -->
                 <div class="contact-form-container" data-aos="fade-right">
-                    <h2 class="form-title">Send Us a Message</h2>
+                    <h2 class="form-title">Gửi tin nhắn cho chúng tôi</h2>
                     
                     <form id="contactForm" class="contact-form">
-                        <!-- Form Group with Floating Label -->
-                        <div class="form-group floating">
-                            <input type="text" id="name" name="name" required>
-                            <label for="name">Full Name</label>
-                            <div class="form-error" id="nameError"></div>
+                        <div class="form-row">
+                            <div class="form-group floating">
+                                <input type="text" id="firstName" name="firstName" required>
+                                <label for="firstName">Họ và tên *</label>
+                                <div class="form-error" id="firstNameError"></div>
+                            </div>
+
+                            <div class="form-group floating">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Email *</label>
+                                <div class="form-error" id="emailError"></div>
+                            </div>
                         </div>
 
-                        <!-- Form Group with Floating Label -->
-                        <div class="form-group floating">
-                            <input type="email" id="email" name="email" required>
-                            <label for="email">Email Address</label>
-                            <div class="form-error" id="emailError"></div>
-                        </div>
-
-                        <!-- Form Group with Floating Label -->
                         <div class="form-group floating">
                             <input type="text" id="subject" name="subject" required>
-                            <label for="subject
+                            <label for="subject">Tiêu đề *</label>
+                            <div class="form-error" id="subjectError"></div>
+                        </div>
+
+                        <div class="form-group floating">
+                            <select id="inquiryType" name="inquiryType" required>
+                                <option value=""></option>
+                                <option value="general">Câu hỏi chung</option>
+                                <option value="support">Hỗ trợ kỹ thuật</option>
+                                <option value="sales">Tư vấn gói dịch vụ</option>
+                                <option value="partnership">Hợp tác đối tác</option>
+                                <option value="other">Khác</option>
+                            </select>
+                            <label for="inquiryType">Loại yêu cầu *</label>
+                            <div class="form-error" id="inquiryTypeError"></div>
+                        </div>
+
+                        <div class="form-group floating">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Nội dung tin nhắn *</label>
+                            <div class="form-error" id="messageError"></div>
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter" checked>
+                            <label for="newsletter">Nhận bản tin về cộng đồng sáng tạo và ưu đãi đặc biệt</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                            <span class="btn-text">Gửi tin nhắn</span>
+                            <div class="loading-spinner">
+                                <div class="spinner"></div>
+                            </div>
+                        </button>
+
+                        <div class="form-success" id="formSuccess">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Tin nhắn đã được gửi thành công!</h4>
+                                <p>Cảm ơn bạn đã liên hệ. Chúng tôi sẽ phản hồi trong vòng 24 giờ làm việc.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info" data-aos="fade-left">
+                    <h2 class="info-title">Thông tin liên hệ</h2>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Email</h3>
+                                <p>Hỗ trợ chung: hello@artspace.vn</p>
+                                <p>Hỗ trợ kỹ thuật: support@artspace.vn</p>
+                                <p>Hợp tác: partner@artspace.vn</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Điện thoại</h3>
+                                <p>Hotline: 1900 1234</p>
+                                <p>Zalo: 0901 234 567</p>
+                                <p>Thứ 2 - Thứ 6: 8:00 - 18:00</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Văn phòng</h3>
+                                <p>123 Đường Sáng Tạo, Quận 1</p>
+                                <p>TP. Hồ Chí Minh, Việt Nam</p>
+                                <p>Mở cửa: 8:00 - 17:30</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ -->
+                    <div class="contact-faq">
+                        <h3>Câu hỏi nhanh</h3>
+                        
+                        <div class="faq-item active">
+                            <div class="faq-question">
+                                <h4>Thời gian phản hồi là bao lâu?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Chúng tôi phản hồi tất cả tin nhắn trong vòng 24 giờ làm việc. Với hỗ trợ kỹ thuật khẩn cấp, thời gian phản hồi là 2-4 giờ.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>Có hỗ trợ trực tiếp không?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Có! Chúng tôi cung cấp hỗ trợ qua chat trực tiếp trên website từ 8:00 - 18:00 các ngày trong tuần.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>Có tài liệu hướng dẫn không?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Có đầy đủ tài liệu hướng dẫn, video tutorial và FAQ tại Trung tâm trợ giúp của chúng tôi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section map-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Đến thăm chúng tôi</h2>
+            <div class="map-container" data-aos="fade-up">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>Bản đồ chỉ đường</p>
+                    <p class="map-address">123 Đường Sáng Tạo, Quận 1, TP. Hồ Chí Minh</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2 class="cta-title">Sẵn sàng bắt đầu?</h2>
+                <p class="cta-text">Đăng ký ngay để nhận 14 ngày dùng thử miễn phí</p>
+                <a href="#" class="btn btn-primary btn-large" id="ctaSignupBtn">Dùng thử miễn phí</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-palette"></i>
+                        <span>ArtSpace</span>
+                    </a>
+                    <p class="footer-text">Nền tảng toàn diện dành cho nghệ sĩ và nhà sáng tạo. Nơi nghệ thuật gặp gỡ công nghệ.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Sản phẩm</h3>
+                    <ul class="footer-links">
+                        <li><a href="features.html">Tính năng</a></li>
+                        <li><a href="pricing.html">Bảng giá</a></li>
+                        <li><a href="#">ArtStudio AI</a></li>
+                        <li><a href="#">Ứng dụng di động</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Cộng đồng</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Sự kiện</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Đối tác</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Hỗ trợ</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Trung tâm trợ giúp</a></li>
+                        <li><a href="contact.html" class="active">Liên hệ</a></li>
+                        <li><a href="#">Chính sách</a></li>
+                        <li><a href="#">Điều khoản</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 ArtSpace. All rights reserved. | Thiết kế bởi WE24-01</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Signup Modal -->
+    <div class="signup-modal" id="signupModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Tạo tài khoản ArtSpace</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="signupForm">
+                    <div class="form-group floating">
+                        <input type="text" id="signupName" required>
+                        <label for="signupName">Họ và tên</label>
+                    </div>
+                    <div class="form-group floating">
+                        <input type="email" id="signupEmail" required>
+                        <label for="signupEmail">Email</label>
+                    </div>
+                    <div class="form-group floating">
+                        <input type="password" id="signupPassword" required>
+                        <label for="signupPassword">Mật khẩu</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Tạo tài khoản</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+</html>

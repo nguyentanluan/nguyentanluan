@@ -3,32 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Features - TechStart</title>
+    <title>Tính năng - ArtSpace</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel="stylesheet" href="assets/libs/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/features.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Sticky -->
     <header class="header" id="header">
         <div class="container">
             <nav class="nav">
                 <a href="index.html" class="logo">
-                    <i class="fas fa-rocket"></i>
-                    <span>TechStart</span>
+                    <i class="fas fa-palette"></i>
+                    <span>ArtSpace</span>
                 </a>
                 
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="features.html" class="active">Features</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#" class="btn btn-outline">Try Free</a></li>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="features.html" class="active">Tính năng</a></li>
+                    <li><a href="pricing.html">Bảng giá</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                    <li><a href="#" class="btn btn-outline">Đăng nhập</a></li>
+                    <li><a href="#" class="btn btn-primary">Bắt đầu sáng tạo</a></li>
                 </ul>
                 
                 <div class="menu-toggle" id="menuToggle">
@@ -41,244 +39,290 @@
     </header>
 
     <!-- Features Hero -->
-    <section class="features-hero" data-aos="fade-up">
+    <section class="features-hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Powerful Features</h1>
-                <p class="hero-subtitle">Everything you need to grow your business in one platform</p>
+                <h1 class="hero-title" data-aos="fade-up">Mọi công cụ bạn cần</h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">Từ portfolio đến bán hàng - tất cả trong một nền tảng</p>
             </div>
         </div>
     </section>
 
-    <!-- All Features Section -->
-    <section class="section all-features" id="allFeatures">
+    <!-- Features Tabs -->
+    <section class="section features-tabs-section">
+        <div class="container">
+            <div class="tabs-container">
+                <div class="tabs-header" data-aos="fade-up">
+                    <button class="tab-btn active" data-tab="portfolio">Portfolio</button>
+                    <button class="tab-btn" data-tab="store">Cửa hàng</button>
+                    <button class="tab-btn" data-tab="ai">AI Tools</button>
+                    <button class="tab-btn" data-tab="community">Cộng đồng</button>
+                </div>
+                
+                <div class="tabs-content">
+                    <!-- Portfolio Tab -->
+                    <div class="tab-pane active" id="portfolio">
+                        <div class="tab-content-grid">
+                            <div class="tab-visual" data-aos="fade-right">
+                                <div class="portfolio-preview">
+                                    <div class="portfolio-grid">
+                                        <div class="portfolio-item" style="background: linear-gradient(135deg, #FF9A9E, #FAD0C4);"></div>
+                                        <div class="portfolio-item" style="background: linear-gradient(135deg, #A1C4FD, #C2E9FB);"></div>
+                                        <div class="portfolio-item" style="background: linear-gradient(135deg, #FFECD2, #FCB69F);"></div>
+                                        <div class="portfolio-item" style="background: linear-gradient(135deg, #84FAB0, #8FD3F4);"></div>
+                                        <div class="portfolio-item" style="background: linear-gradient(135deg, #D4FC79, #96E6A1);"></div>
+                                        <div class="portfolio-item" style="background: linear-gradient(135deg, #FAD961, #F76B1C);"></div>
+                                    </div>
+                                    <div class="portfolio-controls">
+                                        <div class="control-btn active"></div>
+                                        <div class="control-btn"></div>
+                                        <div class="control-btn"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-text" data-aos="fade-left">
+                                <h2>Portfolio Online Chuyên Nghiệp</h2>
+                                <p>Tạo portfolio ấn tượng chỉ trong vài phút. Chọn từ hàng trăm template được thiết kế riêng cho nghệ sĩ.</p>
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-check"></i> 200+ template responsive</li>
+                                    <li><i class="fas fa-check"></i> Tùy chỉnh không giới hạn</li>
+                                    <li><i class="fas fa-check"></i> Tên miền riêng</li>
+                                    <li><i class="fas fa-check"></i> SEO tối ưu</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Store Tab -->
+                    <div class="tab-pane" id="store">
+                        <div class="tab-content-grid">
+                            <div class="tab-visual" data-aos="fade-right">
+                                <div class="store-preview">
+                                    <div class="store-item">
+                                        <div class="item-image" style="background: linear-gradient(135deg, #667eea, #764ba2);"></div>
+                                        <div class="item-info">
+                                            <h4>Print Canvas</h4>
+                                            <p class="price">450.000đ</p>
+                                        </div>
+                                    </div>
+                                    <div class="store-stats">
+                                        <div class="stat">
+                                            <div class="stat-value">1.2K</div>
+                                            <div class="stat-label">Đã bán</div>
+                                        </div>
+                                        <div class="stat">
+                                            <div class="stat-value">4.8</div>
+                                            <div class="stat-label">Đánh giá</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-text" data-aos="fade-left">
+                                <h2>Cửa Hàng Tác Phẩm</h2>
+                                <p>Bán tác phẩm nghệ thuật, prints, merchandise trực tiếp đến người hâm mộ toàn cầu.</p>
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-check"></i> Thanh toán đa phương thức</li>
+                                    <li><i class="fas fa-check"></i> Quản lý kho & vận chuyển</li>
+                                    <li><i class="fas fa-check"></i> Hỗ trợ in ấn & fulfillment</li>
+                                    <li><i class="fas fa-check"></i> Analytics chi tiết</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- AI Tools Tab -->
+                    <div class="tab-pane" id="ai">
+                        <div class="tab-content-grid">
+                            <div class="tab-visual" data-aos="fade-right">
+                                <div class="ai-preview">
+                                    <div class="ai-bubble">Gợi ý màu sắc cho bức tranh này?</div>
+                                    <div class="ai-response">
+                                        <div class="response-content">
+                                            <div class="color-palette">
+                                                <div class="color" style="background: #FF6B6B;"></div>
+                                                <div class="color" style="background: #4ECDC4;"></div>
+                                                <div class="color" style="background: #FFD166;"></div>
+                                                <div class="color" style="background: #06D6A0;"></div>
+                                            </div>
+                                            <p>Palette gợi ý: Vibrant & Energetic</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-text" data-aos="fade-left">
+                                <h2>ArtStudio AI Assistant</h2>
+                                <p>Trợ lý AI thông minh giúp bạn cải thiện tác phẩm, đề xuất ý tưởng và tối ưu hóa quy trình sáng tạo.</p>
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-check"></i> Phân tích màu sắc & bố cục</li>
+                                    <li><i class="fas fa-check"></i> Gợi ý cải thiện tác phẩm</li>
+                                    <li><i class="fas fa-check"></i> Tạo mô tả tự động</li>
+                                    <li><i class="fas fa-check"></i> Dự đoán xu hướng</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Community Tab -->
+                    <div class="tab-pane" id="community">
+                        <div class="tab-content-grid">
+                            <div class="tab-visual" data-aos="fade-right">
+                                <div class="community-preview">
+                                    <div class="user-avatar a1"></div>
+                                    <div class="user-avatar a2"></div>
+                                    <div class="user-avatar a3"></div>
+                                    <div class="comment-bubble">
+                                        <p>Tuyệt vời! ❤️</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-text" data-aos="fade-left">
+                                <h2>Cộng Đồng Sáng Tạo</h2>
+                                <p>Kết nối với nghệ sĩ toàn cầu, tham gia thử thách và học hỏi từ các chuyên gia.</p>
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-check"></i> Nhóm theo chủ đề</li>
+                                    <li><i class="fas fa-check"></i> Thử thách sáng tạo hàng tuần</li>
+                                    <li><i class="fas fa-check"></i> Workshop trực tuyến</li>
+                                    <li><i class="fas fa-check"></i> Cơ hội hợp tác</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Features Grid -->
+    <section class="section all-features">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Complete Feature Set</h2>
-                <p class="section-subtitle">Designed to help you work smarter, not harder</p>
+                <h2 class="section-title">Tất cả tính năng</h2>
+                <p class="section-subtitle">Mọi thứ bạn cần để phát triển sự nghiệp sáng tạo</p>
             </div>
-
-            <!-- Features Tabs -->
-            <div class="features-tabs" data-aos="fade-up">
-                <div class="tabs-header">
-                    <button class="tab-btn active" data-tab="analytics">Analytics</button>
-                    <button class="tab-btn" data-tab="automation">Automation</button>
-                    <button class="tab-btn" data-tab="security">Security</button>
-                    <button class="tab-btn" data-tab="integration">Integration</button>
-                </div>
-
-                <div class="tabs-content">
-                    <!-- Analytics Tab -->
-                    <div class="tab-pane active" id="analytics">
-                        <div class="feature-detail">
-                            <div class="detail-image" data-aos="fade-right">
-                                <div class="image-container">
-                                    <div class="floating-shape shape-1"></div>
-                                    <div class="floating-shape shape-2"></div>
-                                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Analytics Dashboard">
-                                </div>
-                            </div>
-                            <div class="detail-content" data-aos="fade-left">
-                                <h3>Advanced Analytics</h3>
-                                <p>Get real-time insights into your business performance with our powerful analytics dashboard. Track key metrics, visualize data, and make informed decisions.</p>
-                                <ul class="feature-list">
-                                    <li><i class="fas fa-check-circle"></i> Real-time data visualization</li>
-                                    <li><i class="fas fa-check-circle"></i> Custom report generation</li>
-                                    <li><i class="fas fa-check-circle"></i> Predictive analytics</li>
-                                    <li><i class="fas fa-check-circle"></i> Multi-channel tracking</li>
-                                </ul>
-                            </div>
-                        </div>
+            
+            <div class="features-detailed-grid">
+                <div class="feature-detailed" data-aos="fade-up">
+                    <div class="fd-icon">
+                        <i class="fas fa-images"></i>
                     </div>
-
-                    <!-- Automation Tab -->
-                    <div class="tab-pane" id="automation">
-                        <div class="feature-detail">
-                            <div class="detail-image" data-aos="fade-right">
-                                <div class="image-container">
-                                    <div class="floating-shape shape-1"></div>
-                                    <div class="floating-shape shape-2"></div>
-                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Automation">
-                                </div>
-                            </div>
-                            <div class="detail-content" data-aos="fade-left">
-                                <h3>Smart Automation</h3>
-                                <p>Automate repetitive tasks and streamline your workflow with our intelligent automation system. Save time and reduce human error.</p>
-                                <ul class="feature-list">
-                                    <li><i class="fas fa-check-circle"></i> Workflow automation</li>
-                                    <li><i class="fas fa-check-circle"></i> Scheduled tasks</li>
-                                    <li><i class="fas fa-check-circle"></i> AI-powered suggestions</li>
-                                    <li><i class="fas fa-check-circle"></i> Conditional triggers</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Security Tab -->
-                    <div class="tab-pane" id="security">
-                        <div class="feature-detail">
-                            <div class="detail-image" data-aos="fade-right">
-                                <div class="image-container">
-                                    <div class="floating-shape shape-1"></div>
-                                    <div class="floating-shape shape-2"></div>
-                                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Security">
-                                </div>
-                            </div>
-                            <div class="detail-content" data-aos="fade-left">
-                                <h3>Enterprise Security</h3>
-                                <p>Protect your data with military-grade encryption and advanced security features. We ensure your information is safe and compliant.</p>
-                                <ul class="feature-list">
-                                    <li><i class="fas fa-check-circle"></i> End-to-end encryption</li>
-                                    <li><i class="fas fa-check-circle"></i> Two-factor authentication</li>
-                                    <li><i class="fas fa-check-circle"></i> GDPR compliance</li>
-                                    <li><i class="fas fa-check-circle"></i> Regular security audits</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Integration Tab -->
-                    <div class="tab-pane" id="integration">
-                        <div class="feature-detail">
-                            <div class="detail-image" data-aos="fade-right">
-                                <div class="image-container">
-                                    <div class="floating-shape shape-1"></div>
-                                    <div class="floating-shape shape-2"></div>
-                                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Integration">
-                                </div>
-                            </div>
-                            <div class="detail-content" data-aos="fade-left">
-                                <h3>Seamless Integration</h3>
-                                <p>Connect with your favorite tools and services. Our platform integrates with hundreds of popular applications.</p>
-                                <ul class="feature-list">
-                                    <li><i class="fas fa-check-circle"></i> API access</li>
-                                    <li><i class="fas fa-check-circle"></i> Zapier integration</li>
-                                    <li><i class="fas fa-check-circle"></i> Webhooks support</li>
-                                    <li><i class="fas fa-check-circle"></i> Custom connectors</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="fd-content">
+                        <h3>Gallery không giới hạn</h3>
+                        <p>Upload không giới hạn tác phẩm với chất lượng cao, hỗ trợ mọi định dạng.</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Feature Grid -->
-            <div class="feature-cards-grid">
-                <div class="feature-card-extended" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-icon">
+                
+                <div class="feature-detailed" data-aos="fade-up" data-aos-delay="100">
+                    <div class="fd-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Real-time Analytics</h3>
-                    <p>Monitor your performance with live dashboards and detailed reports.</p>
-                    <div class="card-badge">Popular</div>
-                </div>
-
-                <div class="feature-card-extended" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-icon">
-                        <i class="fas fa-robot"></i>
+                    <div class="fd-content">
+                        <h3>Analytics chi tiết</h3>
+                        <p>Theo dõi lượt xem, tương tác và doanh thu với báo cáo chi tiết.</p>
                     </div>
-                    <h3>AI Assistant</h3>
-                    <p>Get intelligent suggestions and automate tasks with our AI.</p>
-                    <div class="card-badge">New</div>
                 </div>
-
-                <div class="feature-card-extended" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card-icon">
+                
+                <div class="feature-detailed" data-aos="fade-up" data-aos-delay="200">
+                    <div class="fd-icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
-                    <h3>Mobile App</h3>
-                    <p>Access your data on the go with our iOS and Android apps.</p>
-                </div>
-
-                <div class="feature-card-extended" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-icon">
-                        <i class="fas fa-cloud-upload-alt"></i>
+                    <div class="fd-content">
+                        <h3>Ứng dụng di động</h3>
+                        <p>Quản lý portfolio và bán hàng mọi lúc mọi nơi với app iOS & Android.</p>
                     </div>
-                    <h3>Cloud Storage</h3>
-                    <p>Secure cloud storage with automatic backup and sync.</p>
                 </div>
-
-                <div class="feature-card-extended" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-icon">
-                        <i class="fas fa-users-cog"></i>
-                    </div>
-                    <h3>Team Collaboration</h3>
-                    <p>Work together seamlessly with team features and permissions.</p>
-                </div>
-
-                <div class="feature-card-extended" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card-icon">
+                
+                <div class="feature-detailed" data-aos="fade-up" data-aos-delay="300">
+                    <div class="fd-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Advanced Security</h3>
-                    <p>Enterprise-grade security with encryption and compliance.</p>
+                    <div class="fd-content">
+                        <h3>Bảo vệ bản quyền</h3>
+                        <p>Watermark tự động và hệ thống chống sao chép tác phẩm.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-detailed" data-aos="fade-up" data-aos-delay="400">
+                    <div class="fd-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="fd-content">
+                        <h3>Đa ngôn ngữ</h3>
+                        <p>Hỗ trợ 15+ ngôn ngữ, tiếp cận khách hàng toàn cầu.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-detailed" data-aos="fade-up" data-aos-delay="500">
+                    <div class="fd-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="fd-content">
+                        <h3>Hỗ trợ 24/7</h3>
+                        <p>Đội ngũ hỗ trợ chuyên nghiệp luôn sẵn sàng giúp đỡ.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ Accordion -->
-    <section class="section faq-section" id="faq">
+    <section class="section faq-section">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Frequently Asked Questions</h2>
-                <p class="section-subtitle">Find answers to common questions about our features</p>
+                <h2 class="section-title">Câu hỏi thường gặp</h2>
+                <p class="section-subtitle">Tìm câu trả lời cho các câu hỏi phổ biến</p>
             </div>
-
+            
             <div class="faq-accordion" data-aos="fade-up">
                 <div class="accordion-item active">
                     <div class="accordion-header">
-                        <h3>How easy is it to migrate from another platform?</h3>
+                        <h3>Tôi có cần biết lập trình để sử dụng không?</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="accordion-content">
-                        <p>We provide a seamless migration process with dedicated support. Our team will help you export your data from your current platform and import it into TechStart. Most migrations are completed within 24-48 hours.</p>
+                        <p>Không! ArtSpace được thiết kế cho tất cả nghệ sĩ, không yêu cầu kiến thức kỹ thuật. Giao diện kéo thả giúp bạn dễ dàng tạo portfolio chỉ trong vài phút.</p>
                     </div>
                 </div>
-
+                
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <h3>Can I customize the dashboard to my needs?</h3>
+                        <h3>ArtSpace thu phí giao dịch như thế nào?</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="accordion-content">
-                        <p>Yes! Our dashboard is fully customizable. You can add, remove, or rearrange widgets to create a personalized view that shows exactly the metrics you care about. We also offer custom widget development for enterprise clients.</p>
+                        <p>Chúng tôi chỉ thu 5% phí giao dịch cho mỗi đơn hàng thành công (thấp hơn nhiều so với các platform khác). Không có phí ẩn hay phí setup.</p>
                     </div>
                 </div>
-
+                
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <h3>What kind of support do you offer?</h3>
+                        <h3>Tôi có thể tùy chỉnh nhiều không?</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="accordion-content">
-                        <p>We offer 24/7 customer support via chat, email, and phone. All plans include access to our knowledge base and video tutorials. Enterprise plans come with a dedicated account manager and priority support.</p>
+                        <p>Hoàn toàn có! Bạn có thể tùy chỉnh mọi thứ từ màu sắc, font chữ, bố cục đến CSS tùy chỉnh nếu muốn. Hơn 200 template sẵn có để lựa chọn.</p>
                     </div>
                 </div>
-
+                
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <h3>Is there a limit to the number of users?</h3>
+                        <h3>Có ứng dụng di động không?</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="accordion-content">
-                        <p>The Starter plan includes up to 5 users. The Pro plan includes up to 20 users. For Enterprise plans, there's no user limit - you can add as many team members as you need.</p>
+                        <p>Có! Ứng dụng ArtSpace có sẵn trên cả iOS và Android, giúp bạn quản lý portfolio, đơn hàng và tương tác với cộng đồng mọi lúc mọi nơi.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="section cta-section" data-aos="fade-up">
+    <!-- CTA -->
+    <section class="section cta-section">
         <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">Ready to Experience Our Features?</h2>
-                <p class="cta-text">Start your free trial today and see how TechStart can transform your business.</p>
-                <a href="contact.html" class="btn btn-primary btn-large btn-cta">
-                    <span>Start Free Trial</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
+            <div class="cta-content" data-aos="fade-up">
+                <h2 class="cta-title">Sẵn sàng bắt đầu?</h2>
+                <p class="cta-text">Tham gia cộng đồng sáng tạo lớn nhất Việt Nam</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Dùng thử miễn phí</a>
             </div>
         </div>
     </section>
@@ -289,57 +333,56 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <a href="index.html" class="footer-logo">
-                        <i class="fas fa-rocket"></i>
-                        <span>TechStart</span>
+                        <i class="fas fa-palette"></i>
+                        <span>ArtSpace</span>
                     </a>
-                    <p class="footer-text">Innovative technology solutions for modern businesses. Empowering startups worldwide.</p>
+                    <p class="footer-text">Nền tảng toàn diện dành cho nghệ sĩ và nhà sáng tạo. Nơi nghệ thuật gặp gỡ công nghệ.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 
                 <div class="footer-col">
-                    <h3 class="footer-title">Quick Links</h3>
+                    <h3 class="footer-title">Sản phẩm</h3>
                     <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="features.html" class="active">Features</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="features.html" class="active">Tính năng</a></li>
+                        <li><a href="pricing.html">Bảng giá</a></li>
+                        <li><a href="#">ArtStudio AI</a></li>
+                        <li><a href="#">Ứng dụng di động</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col">
-                    <h3 class="footer-title">Resources</h3>
+                    <h3 class="footer-title">Cộng đồng</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Sự kiện</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Đối tác</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col">
-                    <h3 class="footer-title">Contact Info</h3>
-                    <ul class="footer-contact">
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Silicon Valley</li>
-                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-                        <li><i class="fas fa-envelope"></i> info@techstart.com</li>
+                    <h3 class="footer-title">Hỗ trợ</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Trung tâm trợ giúp</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                        <li><a href="#">Chính sách</a></li>
+                        <li><a href="#">Điều khoản</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2023 TechStart. All rights reserved.</p>
+                <p>&copy; 2023 ArtSpace. All rights reserved. | Thiết kế bởi WE24-01</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="assets/libs/swiper-bundle.min.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/features.js"></script>
 </body>

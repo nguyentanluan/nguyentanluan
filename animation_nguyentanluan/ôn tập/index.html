@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechStart - Innovative Solutions</title>
+    <title>ArtSpace - Nền tảng cho Nghệ sĩ & Nhà sáng tạo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="assets/libs/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header Sticky -->
@@ -18,16 +18,17 @@
         <div class="container">
             <nav class="nav">
                 <a href="index.html" class="logo">
-                    <i class="fas fa-rocket"></i>
-                    <span>TechStart</span>
+                    <i class="fas fa-palette"></i>
+                    <span>ArtSpace</span>
                 </a>
                 
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#" class="btn btn-outline">Try Free</a></li>
+                    <li><a href="index.html" class="active">Trang chủ</a></li>
+                    <li><a href="features.html">Tính năng</a></li>
+                    <li><a href="pricing.html">Bảng giá</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                    <li><a href="#" class="btn btn-outline">Đăng nhập</a></li>
+                    <li><a href="#" class="btn btn-primary btn-cta">Bắt đầu sáng tạo</a></li>
                 </ul>
                 
                 <div class="menu-toggle" id="menuToggle">
@@ -41,32 +42,71 @@
 
     <!-- Hero Section Full-screen -->
     <section class="hero" id="hero">
-        <div class="hero-content">
-            <div class="hero-text" data-aos="fade-up" data-aos-delay="200">
-                <h1 class="hero-title">
-                    <span class="title-word title-word-1">Innovative</span>
-                    <span class="title-word title-word-2">Tech</span>
-                    <span class="title-word title-word-3">Solutions</span>
-                </h1>
-                <p class="hero-subtitle">Transform your business with our cutting-edge technology platform designed for startups and enterprises.</p>
-                <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary btn-cta">
-                        <span>Get Started</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#" class="btn btn-secondary">
-                        <i class="fas fa-play-circle"></i>
-                        Watch Demo
-                    </a>
+        <div class="hero-bg parallax-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up" data-aos-delay="200">
+                    <div class="hero-badge">
+                        <span>🎨 NEW</span> Giới thiệu ArtStudio AI
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Không gian sáng tạo</span>
+                        <span class="title-line highlight">dành riêng cho bạn</span>
+                    </h1>
+                    <p class="hero-subtitle">Nền tảng toàn diện giúp nghệ sĩ, designer và nhà sáng tạo quản lý, chia sẻ và kiếm tiền từ tác phẩm của mình.</p>
+                    <div class="hero-buttons">
+                        <a href="#cta" class="btn btn-primary btn-cta">
+                            <span>Dùng thử miễn phí</span>
+                            <div class="btn-sparkle">
+                                <i class="fas fa-magic"></i>
+                            </div>
+                        </a>
+                        <a href="#videoModal" class="btn btn-secondary video-trigger">
+                            <i class="fas fa-play-circle"></i>
+                            Xem demo
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number" data-count="25000">0</div>
+                            <div class="stat-label">Nghệ sĩ</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="500000">0</div>
+                            <div class="stat-label">Tác phẩm</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="98">0<span>%</span></div>
+                            <div class="stat-label">Hài lòng</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
-                <div class="floating-shape shape-1"></div>
-                <div class="floating-shape shape-2"></div>
-                <div class="floating-shape shape-3"></div>
-                <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Tech Dashboard">
+                
+                <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
+                    <div class="floating-element el1"></div>
+                    <div class="floating-element el2"></div>
+                    <div class="floating-element el3"></div>
+                    <div class="artwork-preview">
+                        <div class="artwork-grid">
+                            <div class="art-item item1" style="background: linear-gradient(135deg, #FF9A9E, #FAD0C4);"></div>
+                            <div class="art-item item2" style="background: linear-gradient(135deg, #A1C4FD, #C2E9FB);"></div>
+                            <div class="art-item item3" style="background: linear-gradient(135deg, #FFECD2, #FCB69F);"></div>
+                            <div class="art-item item4" style="background: linear-gradient(135deg, #84FAB0, #8FD3F4);"></div>
+                        </div>
+                        <div class="artwork-info">
+                            <div class="artist-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Artist">
+                            </div>
+                            <div class="artist-info">
+                                <h4>Minh Anh</h4>
+                                <p>Digital Artist</p>
+                            </div>
+                            <div class="artwork-likes">
+                                <i class="fas fa-heart"></i> 1.2K
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,59 +115,58 @@
             <div class="mouse">
                 <div class="wheel"></div>
             </div>
-            <p>Scroll Down</p>
         </div>
     </section>
 
-    <!-- Features Preview Section -->
+    <!-- Features Preview -->
     <section class="section features-preview" id="features">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Powerful Features</h2>
-                <p class="section-subtitle">Discover what makes our platform unique</p>
+                <h2 class="section-title">Tính năng nổi bật</h2>
+                <p class="section-subtitle">Mọi công cụ bạn cần để phát triển sự nghiệp sáng tạo</p>
             </div>
             
             <div class="features-grid">
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="card-icon">
-                        <i class="fas fa-bolt"></i>
+                        <i class="fas fa-cloud-upload-alt"></i>
                     </div>
-                    <h3 class="card-title">Lightning Fast</h3>
-                    <p class="card-text">Optimized for speed and performance with our advanced technology stack.</p>
-                    <a href="features.html" class="card-link">Learn More</a>
+                    <h3 class="card-title">Portfolio Online</h3>
+                    <p class="card-text">Tạo portfolio chuyên nghiệp với giao diện tùy chỉnh, không cần biết code.</p>
+                    <a href="features.html" class="card-link">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
                 </div>
                 
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="card-icon">
-                        <i class="fas fa-shield-alt"></i>
+                        <i class="fas fa-shopping-cart"></i>
                     </div>
-                    <h3 class="card-title">Secure & Reliable</h3>
-                    <p class="card-text">Enterprise-grade security with 99.9% uptime guarantee and data encryption.</p>
-                    <a href="features.html" class="card-link">Learn More</a>
+                    <h3 class="card-title">Cửa hàng tác phẩm</h3>
+                    <p class="card-text">Bán tác phẩm nghệ thuật, prints, merchandise trực tiếp đến người hâm mộ.</p>
+                    <a href="features.html" class="card-link">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
                 </div>
                 
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="card-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fas fa-robot"></i>
                     </div>
-                    <h3 class="card-title">Fully Responsive</h3>
-                    <p class="card-text">Perfect experience on any device - desktop, tablet, or mobile.</p>
-                    <a href="features.html" class="card-link">Learn More</a>
+                    <h3 class="card-title">AI Assistant</h3>
+                    <p class="card-text">Trợ lý AI giúp tối ưu hóa tác phẩm và đề xuất cải thiện.</p>
+                    <a href="features.html" class="card-link">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             
             <div class="text-center" data-aos="fade-up" data-aos-delay="400">
-                <a href="features.html" class="btn btn-outline">View All Features</a>
+                <a href="features.html" class="btn btn-outline">Xem tất cả tính năng</a>
             </div>
         </div>
     </section>
 
     <!-- Testimonial Slider -->
-    <section class="section testimonial-section" id="testimonials">
+    <section class="section testimonial-section">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">What Our Clients Say</h2>
-                <p class="section-subtitle">Trusted by startups and enterprises worldwide</p>
+                <h2 class="section-title">Nghệ sĩ nói gì?</h2>
+                <p class="section-subtitle">Những người sáng tạo đang sử dụng ArtSpace</p>
             </div>
             
             <div class="swiper testimonial-slider" data-aos="fade-up" data-aos-delay="200">
@@ -137,14 +176,21 @@
                             <div class="quote-icon">
                                 <i class="fas fa-quote-left"></i>
                             </div>
-                            <p class="testimonial-text">"TechStart transformed our workflow completely. Our productivity increased by 200% in just 3 months!"</p>
+                            <p class="testimonial-text">"ArtSpace đã thay đổi hoàn toàn cách tôi kinh doanh nghệ thuật. Doanh thu tăng 300% chỉ trong 3 tháng!"</p>
                             <div class="testimonial-author">
                                 <div class="author-avatar">
-                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Alex Johnson">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Tuấn Anh">
                                 </div>
                                 <div class="author-info">
-                                    <h4>Alex Johnson</h4>
-                                    <p>CEO, InnovateCo</p>
+                                    <h4>Tuấn Anh</h4>
+                                    <p>Illustrator</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -155,14 +201,21 @@
                             <div class="quote-icon">
                                 <i class="fas fa-quote-left"></i>
                             </div>
-                            <p class="testimonial-text">"The implementation was seamless and the support team is outstanding. Highly recommended for any tech startup."</p>
+                            <p class="testimonial-text">"Từ một sinh viên mỹ thuật, giờ tôi có gallery online riêng. ArtSpace giúp tôi tự tin hơn với tác phẩm của mình."</p>
                             <div class="testimonial-author">
                                 <div class="author-avatar">
-                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Miller">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Mai Linh">
                                 </div>
                                 <div class="author-info">
-                                    <h4>Sarah Miller</h4>
-                                    <p>CTO, TechVision</p>
+                                    <h4>Mai Linh</h4>
+                                    <p>Fine Artist</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -173,14 +226,21 @@
                             <div class="quote-icon">
                                 <i class="fas fa-quote-left"></i>
                             </div>
-                            <p class="testimonial-text">"Best investment we made this year. The platform scales perfectly with our growing business needs."</p>
+                            <p class="testimonial-text">"Công cụ AI của ArtSpace giúp tôi tối ưu màu sắc và bố cục tác phẩm. Thực sự là game changer!"</p>
                             <div class="testimonial-author">
                                 <div class="author-avatar">
-                                    <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="David Chen">
+                                    <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Đức Hải">
                                 </div>
                                 <div class="author-info">
-                                    <h4>David Chen</h4>
-                                    <p>Founder, StartupGrid</p>
+                                    <h4>Đức Hải</h4>
+                                    <p>Digital Artist</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -195,15 +255,28 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="section cta-section" data-aos="fade-up">
+    <section class="section cta-section" id="cta" data-aos="fade-up">
         <div class="container">
             <div class="cta-content">
-                <h2 class="cta-title">Ready to Transform Your Business?</h2>
-                <p class="cta-text">Join thousands of satisfied customers and start your journey today.</p>
-                <a href="contact.html" class="btn btn-primary btn-large btn-cta">
-                    <span>Start Free Trial</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
+                <h2 class="cta-title">Sẵn sàng bắt đầu hành trình sáng tạo?</h2>
+                <p class="cta-text">Tham gia cùng 25,000+ nghệ sĩ trên ArtSpace ngay hôm nay</p>
+                
+                <!-- Signup Form -->
+                <form class="cta-form" id="homeSignupForm">
+                    <div class="form-group floating">
+                        <input type="email" id="homeEmail" placeholder="Địa chỉ email của bạn" required>
+                        <label for="homeEmail">Email của bạn</label>
+                        <div class="form-error"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">Dùng thử miễn phí</span>
+                        <div class="loading-spinner">
+                            <div class="spinner"></div>
+                        </div>
+                    </button>
+                </form>
+                
+                <p class="cta-note">14 ngày dùng thử • Không cần thẻ tín dụng</p>
             </div>
         </div>
     </section>
@@ -214,53 +287,74 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <a href="index.html" class="footer-logo">
-                        <i class="fas fa-rocket"></i>
-                        <span>TechStart</span>
+                        <i class="fas fa-palette"></i>
+                        <span>ArtSpace</span>
                     </a>
-                    <p class="footer-text">Innovative technology solutions for modern businesses. Empowering startups worldwide.</p>
+                    <p class="footer-text">Nền tảng toàn diện dành cho nghệ sĩ và nhà sáng tạo. Nơi nghệ thuật gặp gỡ công nghệ.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 
                 <div class="footer-col">
-                    <h3 class="footer-title">Quick Links</h3>
+                    <h3 class="footer-title">Sản phẩm</h3>
                     <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="features.html">Features</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="features.html">Tính năng</a></li>
+                        <li><a href="pricing.html">Bảng giá</a></li>
+                        <li><a href="#">ArtStudio AI</a></li>
+                        <li><a href="#">Ứng dụng di động</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col">
-                    <h3 class="footer-title">Resources</h3>
+                    <h3 class="footer-title">Cộng đồng</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Sự kiện</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Đối tác</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col">
-                    <h3 class="footer-title">Contact Info</h3>
-                    <ul class="footer-contact">
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Silicon Valley</li>
-                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-                        <li><i class="fas fa-envelope"></i> info@techstart.com</li>
+                    <h3 class="footer-title">Hỗ trợ</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Trung tâm trợ giúp</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                        <li><a href="#">Chính sách</a></li>
+                        <li><a href="#">Điều khoản</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2023 TechStart. All rights reserved.</p>
+                <p>&copy; 2023 ArtSpace. All rights reserved. | Thiết kế bởi WE24-01</p>
             </div>
         </div>
     </footer>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>ArtSpace Platform Demo</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <p>Video giới thiệu nền tảng</p>
+                    </div>
+                </div>
+                <p>Xem cách ArtSpace giúp nghệ sĩ quản lý và bán tác phẩm hiệu quả</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
