@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP T.Luân  | Bộ sưu tập</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-vest"></i>
+                <span>SHOP T.Luân </span>
+            </a>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="services.html">Dịch vụ</a></li>
+                    <li><a href="portfolio.html" class="active">Bộ sưu tập</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="#" class="btn-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">3</span>
+                    </a>
+                    <button class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="index.html" class="logo">
+                <i class="fas fa-vest"></i>
+                <span>SHOP T.Luân </span>
+            </a>
+            <button class="menu-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="services.html">Dịch vụ</a></li>
+            <li><a href="portfolio.html" class="active">Bộ sưu tập</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+            <div class="mobile-nav-actions">
+                <a href="#" class="btn-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">3</span>
+                </a>
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title" data-aos="fade-up">Bộ sưu tập</h1>
+            <p class="page-subtitle" data-aos="fade-up" data-aos-delay="100">Khám phá những mẫu áo khoác thời thượng và đa dạng phong cách</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter" data-aos="fade-up">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tất cả</button>
+                <button class="filter-btn" data-filter="leather">Áo khoác da</button>
+                <button class="filter-btn" data-filter="jean">Áo khoác jean</button>
+                <button class="filter-btn" data-filter="bomber">Áo khoác chống nắng</button>
+                <button class="filter-btn" data-filter="winter">Áo khoác mùa đông</button>
+                <button class="filter-btn" data-filter="trending">Xu hướng</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Masonry Grid -->
+    <section class="masonry-grid" data-aos="fade-up">
+        <div class="container">
+            <div class="masonry">
+                <div class="masonry-item" data-category="leather trending">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/img/da.jpg" alt="Áo khoác da nam">
+                            <div class="portfolio-overlay">
+                                <h3 class="portfolio-title">Áo khoác da nam cao cấp</h3>
+                                <p class="portfolio-category">Áo khoác da</p>
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-like">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <button class="portfolio-view">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="btn-add-to-cart">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-name">Áo khoác da nam cao cấp</h3>
+                            <p class="portfolio-category">Áo khoác da</p>
+                            <div class="portfolio-price">
+                                <span class="current-price">2.499.000đ</span>
+                                <span class="original-price">3.200.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="masonry-item" data-category="jean">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/img/mu.jpg" alt="Áo khoác jean">
+                            <div class="portfolio-overlay">
+                                <h3 class="portfolio-title">Áo khoác jean unisex</h3>
+                                <p class="portfolio-category">Áo khoác jean</p>
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-like">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <button class="portfolio-view">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="btn-add-to-cart">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-name">Áo khoác jean unisex</h3>
+                            <p class="portfolio-category">Áo khoác jean</p>
+                            <div class="portfolio-price">
+                                <span class="current-price">899.000đ</span>
+                                <span class="original-price">1.200.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="masonry-item" data-category="bomber trending">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/img/ai chong nang.jpg" alt="Áo khoác chống nắng">
+                            <div class="portfolio-overlay">
+                                <h3 class="portfolio-title">Áo khoác chống nắng</h3>
+                                <p class="portfolio-category">Áo khoác chống nắng</p>
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-like">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <button class="portfolio-view">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="btn-add-to-cart">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-name">Áo khoác chống nắng</h3>
+                            <p class="portfolio-category">Áo khoác bomber</p>
+                            <div class="portfolio-price">
+                                <span class="current-price">1.250.000đ</span>
+                                <span class="original-price">1.500.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="masonry-item" data-category="winter">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/img/long.jpg" alt="Áo khoác lông vũ">
+                            <div class="portfolio-overlay">
+                                <h3 class="portfolio-title">Áo khoác lông vũ ấm áp</h3>
+                                <p class="portfolio-category">Áo khoác mùa đông</p>
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-like">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <button class="portfolio-view">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="btn-add-to-cart">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-name">Áo khoác lông vũ ấm áp</h3>
+                            <p class="portfolio-category">Áo khoác mùa đông</p>
+                            <div class="portfolio-price">
+                                <span class="current-price">3.499.000đ</span>
+                                <span class="original-price">4.500.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="masonry-item" data-category="leather">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/img/nu.jpg" alt="Áo khoác da nữ">
+                            <div class="portfolio-overlay">
+                                <h3 class="portfolio-title">Áo khoác da nữ phong cách</h3>
+                                <p class="portfolio-category">Áo khoác da</p>
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-like">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <button class="portfolio-view">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="btn-add-to-cart">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-name">Áo khoác da nữ phong cách</h3>
+                            <p class="portfolio-category">Áo khoác da</p>
+                            <div class="portfolio-price">
+                                <span class="current-price">2.199.000đ</span>
+                                <span class="original-price">2.800.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="masonry-item" data-category="jean trending">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/img/ao.jpg" alt="Áo khoác jean nữ">
+                            <div class="portfolio-overlay">
+                                <h3 class="portfolio-title">Áo khoác jean nữ form rộng</h3>
+                                <p class="portfolio-category">Áo khoác jean</p>
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-like">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <button class="portfolio-view">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="btn-add-to-cart">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-name">Áo khoác jean nữ form rộng</h3>
+                            <p class="portfolio-category">Áo khoác jean</p>
+                            <div class="portfolio-price">
+                                <span class="current-price">950.000đ</span>
+                                <span class="original-price">1.250.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="masonry-item" data-category="bomber">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/img/bonber.jpg" alt="Áo khoác bomber nam">
+                            <div class="portfolio-overlay">
+                                <h3 class="portfolio-title">Áo khoác bomber nam cá tính</h3>
+                                <p class="portfolio-category">Áo khoác bomber</p>
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-like">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <button class="portfolio-view">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="btn-add-to-cart">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-name">Áo khoác bomber nam cá tính</h3>
+                            <p class="portfolio-category">Áo khoác bomber</p>
+                            <div class="portfolio-price">
+                                <span class="current-price">1.350.000đ</span>
+                                <span class="original-price">1.700.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="masonry-item" data-category="winter trending">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/img/nuoc.jpg" alt="Áo khoác dù">
+                            <div class="portfolio-overlay">
+                                <h3 class="portfolio-title">Áo khoác dù chống nước</h3>
+                                <p class="portfolio-category">Áo khoác mùa đông</p>
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-like">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <button class="portfolio-view">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                    <button class="btn-add-to-cart">Thêm vào giỏ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-name">Áo khoác dù chống nước</h3>
+                            <p class="portfolio-category">Áo khoác mùa đông</p>
+                            <div class="portfolio-price">
+                                <span class="current-price">1.099.000đ</span>
+                                <span class="original-price">1.450.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Detail Modal -->
+    <div class="portfolio-modal">
+        <div class="portfolio-modal-content">
+            <button class="portfolio-modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="portfolio-modal-body">
+                <div class="portfolio-modal-image">
+                    <img src="" alt="" id="modal-img">
+                </div>
+                <div class="portfolio-modal-info">
+                    <h2 id="modal-title"></h2>
+                    <p class="portfolio-modal-category" id="modal-category"></p>
+                    <p class="portfolio-modal-description" id="modal-description"></p>
+                    <div class="portfolio-modal-price">
+                        <span class="current-price" id="modal-current-price"></span>
+                        <span class="original-price" id="modal-original-price"></span>
+                    </div>
+                    <div class="portfolio-modal-sizes">
+                        <h3>Chọn size:</h3>
+                        <div class="size-options">
+                            <button class="size-option">S</button>
+                            <button class="size-option active">M</button>
+                            <button class="size-option">L</button>
+                            <button class="size-option">XL</button>
+                            <button class="size-option">XXL</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-modal-actions">
+                        <button class="btn-add-to-cart-large">Thêm vào giỏ hàng</button>
+                        <button class="btn-buy-now">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-vest"></i>
+                        <span>SHOP T.Luân </span>
+                    </a>
+                    <p class="footer-description">SHOP T.Luân  là thương hiệu áo khoác hàng đầu Việt Nam, mang đến những sản phẩm chất lượng với thiết kế thời thượng.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Liên kết nhanh</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="services.html">Dịch vụ</a></li>
+                        <li><a href="portfolio.html">Bộ sưu tập</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Dịch vụ</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Tư vấn thời trang</a></li>
+                        <li><a href="#">Đo size online</a></li>
+                        <li><a href="#">Bảo hành & sửa chữa</a></li>
+                        <li><a href="#">Thu cũ đổi mới</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Liên hệ</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận XYZ, TP.HCM</li>
+                        <li><i class="fas fa-phone"></i> (028) 1234 5678</li>
+                        <li><i class="fas fa-envelope"></i> info@SHOP T.Luân .vn</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; SHOP T.Luân . Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
